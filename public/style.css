@@ -1,0 +1,204 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.row{
+    margin: 0;
+}
+:root{
+    --main-bg:#022139;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.main_meu{
+    background-color:var(--main-bg) ;
+}
+.navbar{
+    color:white;
+    background-color:var(--main-bg) ;
+    padding:2rem;
+}
+.navbar a{
+    color:white;
+    background-color:var(--main-bg) ;
+    font-size: 1.5rem;
+}
+.navbar li{
+    margin-left: 20px;
+}
+.navbar-toggler-icon{
+    background-color: white;
+}
+
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.main_header_left{
+    display: flex;
+    flex-direction: column;
+}
+
+.main_header_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_header{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:30px;
+
+}
+
+.navbar a:hover{
+   color: cornflowerblue;
+    background-color:var(--main-bg) ;
+    font-size: 1.5rem;
+}
+
+.main_header h1{
+    font-size: 3rem;
+}
+.customsize{
+    font-size:250px;
+    transition: all linear;
+    animation: rot 2s linear infinite;
+}
+.main_header p{
+    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+}
+#btnchecknow{
+    width: 250px;
+    margin: 25px;
+    height: 35px;
+    border:2px solid #022139;
+    border-radius:10px;
+    color:#022139;
+    font-size: 20px;
+}
+
+#btnchecknow:hover{
+    width: 250px;
+    margin: 25px;
+    height: 35px;
+    border:2px solid #022139;
+    border-radius:10px;
+   color: white;
+    font-size: 20px;
+    background-color: #022139;
+}
+
+footer{
+    width: 100%;
+    background-color: #022139;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+footer p{
+    text-align: center;
+    color:white;
+    line-height: 2rem;
+    font-size: 17px;
+}
+
+.userpensize{
+    font-size: 230px;
+    color:#010e18;
+    align-items: center;
+}
+
+/* weather page design */
+
+.container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_content{
+    width: 60%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.weather_info{
+    height: 100%;
+    /* background-image: linear-gradient(to right, rgb(51, 103, 247) ,rgb(52, 177, 235)); */
+    /* background-image: linear-gradient(to right, rgb(84, 104, 158) ,rgb(82, 144, 182)); */
+    /* background-image: linear-gradient(to right, grey , rgb(78, 119, 231)); */
+    /* background-color: rgb(22, 21, 21); */
+    background-color:#6EACDA ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    color:white;
+    border-radius: 20px;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px;
+}
+.search_field{
+    border:2px solid rgb(137, 136, 132);
+    border-radius:10px;
+}
+.btn-outline-secondary{
+height: 100%;
+color:white !important;
+width: 100%;
+background-color: #033053 !important;
+}
+.btn-outline-secondary:hover{
+    color:white !important;
+    background-color: #022139 !important;
+ }
+ #mintemp{
+    font-size: 20px;
+ }
+ #maxtemp{
+    font-size: 20px;
+ }
+ #temp{
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+ }

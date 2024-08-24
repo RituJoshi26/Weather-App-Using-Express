@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Status</title>
+    {{>headerlinks}}
+</head>
+<body>
+    {{>navbar}}
+
+    <div class="container">
+        <div class="main_content">
+        <div class="city_search">
+            <div class="input-group search_field">
+                <input type="text" class="form-control" id="txtcity" placeholder="Enter your city name" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" id="btnsearchcity" type="button">Search</button>
+                </div>
+            </div>
+        </div>
+        {{!-- <div class="weather_info">
+            <p id="cityname">Indore, IND</p>
+            <p id ="temp">25&deg;C <span><i style ="color:rgb(214, 177, 13);" class="fa-solid fa-sun"></i></span></p>
+            <p id="mintemp">Minimum Temperature: 25&deg;C</p>
+            <p id="maxtemp">Maximum Temperature: 30&deg;C</p>
+        </div> --}}
+                <div class="weather_info">
+                    <p id="txtdefault">Get to know about your city's weather condition.... <span><i class="fa-solid fa-feather"></i></span></p>
+                    <p id="cityname"></p>
+                    <p id="temp"></p>
+                    <p id="mintemp"></p>
+                    <p id="maxtemp"></p>
+                </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    <script src="weatherinfo.js"></script>
+</body>
+</html>
